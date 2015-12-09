@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y wget openjdk-8-jdk --no-install-recomme
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /tmp/openam_exploded
+RUN mkdir -p /opt/openam/config
 WORKDIR /tmp/openam_exploded
 
 
