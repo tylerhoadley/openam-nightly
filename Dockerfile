@@ -14,5 +14,6 @@ RUN curl http://download.forgerock.org/downloads/openam/openam_link.js | \
    grep -o "http://.*\.war" | xargs curl -o webapps/openam.war
 
 ADD run-openam.sh /tmp/run-openam.sh
+RUN chmod 777 /tmp/run-openam.sh
 
 CMD ["/tmp/run-openam.sh"]
