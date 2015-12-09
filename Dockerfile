@@ -2,8 +2,8 @@ FROM tomcat:8-jre8
 
 MAINTAINER warren.strange@gmail.com
 
-ENV CATALINA_HOME /usr/local/tomcat
-ENV PATH $CATALINA_HOME/bin:$PATH
+ENV CATALINA_HOME=/usr/local/tomcat
+ENV PATH=$CATALINA_HOME/bin:$PATH
 WORKDIR $CATALINA_HOME
 
 EXPOSE 8080
